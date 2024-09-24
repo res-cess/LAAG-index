@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Margarine&display=swap');
+
+.text-container {
+  position: absolute;
+  top: 70px;
+  left: 215px;
+  text-align: left;
+  background-color: transparent; /* add a background to see the effect */
+  padding: 50px; /* add some padding for better visibility */
+  font-size: 45px;
+  font-family: "Margarine", sans-serif;
+}
+
+
+body{
+    background-color: #FFEBB8;
+}
+
+/* Top-left image-button styles */
+.image-button.top-left {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+  width: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0%;
+}
+
+   /* Top-right image styles */
+   .top-right {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    width: 330px;
+    height: 45%;
+  }
+
+
+  #top-image {
+    display: block;
+    top: 450px;
+    left: 5%;
+    width: 75;
+    max-width: 75%;
+    height: auto;
+    margin-right: 15%;
+  }
+  
+.background-image{
+    position: absolute;
+    top: 10px; 
+}
+
+.container {
+  background-color: #25BAEC; /* light gray background */
+  border-radius: 50px; /* rounded edges */
+  padding: 20px; /* add some padding */
+  width: 600px; /* set the width */
+  height: 350px;
+  position: absolute; /* position the container absolutely */
+  top: 57%; /* move it 50% from the top */
+  left: 50%; /* move it 50% from the left */
+  transform: translate(-50%, -50%); /* adjust the position to center it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* set the height to 100% of the viewport */
+  margin: 0;
+  font-size: 38px;
+  font-family: "Margarine", sans-serif;
+}
+
+.button {
+    /* Style the buttons */
+    background-color: transparent;
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline; /* Remove the default link underline */
+    text-align: center;
+    font-size: 40px;
+    font-family: "Margarine", sans-serif;
+    width: 700px;
+  }
+  
+  .top-button {
+    /* Position the top button */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bottom-button {
+    /* Position the bottom button */
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+@media (max-width: 768px) {
+  footer .left-button, footer .right-button {
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .left-button, footer .right-button {
+    font-size: 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; /* adjust the height to your needs */
+  background-color: transparent;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer .left-button, footer .right-button {
+  background-color: transparent; /* adjust the background color to your needs */
+  color: #294e85  ;
+  border: none;
+  padding: 30px 40px;
+  font-size: 45px;
+  font-family: "Margarine", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer .left-button, footer .right-button {
+  margin: 30px 30px; /* reduce the margin to 2px on the left and right sides */
+  margin-top: 0px;
+}
+
+footer .left-button:hover, footer .right-button:hover {
+  background-color: transparent; /* adjust the hover background color to your needs */
+}
+
+.btn-primary {
+  line-height: 2;
+  font-size: xx-small;
+  padding: 20px 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(3); /* increase checkbox size */
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: transparent;
+  }
+
+  .checkbox-group-left input[type="checkbox"] {
+    margin-right: 50px; /* add space between checkboxes */
+  }
+  
+  .wrapper input[type="checkbox-group left"] {
+    margin-right: 10px; /* add 10px margin between checkboxes */
+  }
+
+  .checkbox-group {
+    padding: 40px; /* increase padding */
+    border: 2px solid #ccc; /* increase border width */
+    border-radius: 20px; /* increase border radius */
+    border: none;
+  }
+
+  input[type="checkbox"]::checked {
+    color: #0000; /* change the color of the check to black */
+  }
+
+  label {
+    padding-left: 10px; /* add 10px padding to the left of the label */
+  }
+
+
+.header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: #daecf3;
+  color: #0000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  outline: 2px solid #ccc;
+  outline-offset: .5px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li{
+  margin-right: 20px;
+}
+
+.nav a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba (0, 0, 0, 0.2);
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav li{
+    margin-right: 0;
+  }
+  .nav a { 
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba (0, 0, 0, 0.2);
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav li{
+    margin-right: 0;
+  }
+  .nav a { 
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}
